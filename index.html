@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Single Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar" id="myNavbar">
+    <a href="#beranda">Beranda</a>
+    <a href="#wisata">Wisata</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#buku-tamu">Buku Tamu</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">☰</a>
+  </div>
+
+  <section id="beranda">
+      <div class="hero">
+    <div class="hero-text">
+      <h1>Jelajahi Keindahan Alam Indonesia</h1>
+      <p>Temukan tempat-tempat wisata menakjubkan dan budaya lokal yang kaya dalam satu platform.</p>
+      <a href="#wisata" class="btn-eksplor">Eksplor Sekarang</a>
+    </div>
+    <div class="hero-image">
+      <img src="image/Biru dan Oranye Yogyakarta Acrylic Tumbler .svg" alt="Gambar Wisata">
+    </div>
+  </div>
+  </section>
+
+  
+
+  <section id="wisata">
+     <h1>Wisata Sleman Yogyakarta</h1>
+  <div class="wisata-container">
+
+    <article class="wisata-card">
+      <img src="image/2024 - Merapi Park Jogja _ Lokasi, Harga Tiket, Jam Buka, Daya Tarik & Fasilitas.jpeg" alt="Merapi Park">
+      <h2>Merapi Park – The World Landmarks</h2>
+      <p>Merapi Park adalah taman wisata tematik yang menghadirkan sensasi berkeliling dunia dalam satu lokasi. Dikenal dengan koleksi miniatur landmark dunia seperti Menara Eiffel (Prancis), Patung Liberty (Amerika Serikat), Big Ben (Inggris), dan Kincir Angin Belanda, tempat ini sangat populer sebagai spot foto Instagramable.
+      <br><br>
+      Tidak hanya berfoto, pengunjung juga dapat menikmati taman bunga yang tertata rapi, area duduk untuk bersantai, serta udara sejuk khas lereng Merapi. Fasilitas lainnya termasuk area bermain anak, kafe dan food court, serta toko souvenir.
+      <br><br>
+      Tempat ini sangat cocok untuk liburan keluarga, pasangan, maupun wisata edukatif untuk anak-anak. Dengan latar belakang Gunung Merapi yang megah, Merapi Park menjadi salah satu destinasi unggulan di Sleman.</p>
+      <span>📍 Kaliurang KM 22, Sleman</span>
+    </article>
+
+    <article class="wisata-card">
+      <img src="image/Stonehenge Merapi Jogja, Pesona Keindahan Taman Batu Unik Ala Eropa.jpeg" alt="Stonehenge Merapi">
+      <h2>Stonehenge Merapi</h2>
+      <p>Terletak di kaki Gunung Merapi, Stonehenge Merapi menawarkan pengalaman wisata yang unik dengan pemandangan replika batu raksasa ala Stonehenge Inggris. Batu-batu besar ditata melingkar seperti versi aslinya, menjadikannya tempat yang memukau untuk berfoto dan menikmati alam terbuka.
+      <br><br>
+      Latar belakang Gunung Merapi yang megah, ditambah suasana tenang dan udara segar, menjadikan tempat ini cocok untuk healing, konten kreator, atau sekadar jalan-jalan santai. Lokasinya juga tidak jauh dari wisata Lava Tour Merapi, sehingga bisa dikombinasikan dalam satu kunjungan.
+      <br><br>
+      Tersedia juga warung makan, area parkir, dan spot foto tambahan yang terus dikembangkan oleh pengelola.</p>
+      <span>📍 Cangkringan, Sleman</span>
+    </article>
+
+    <article class="wisata-card">
+      <img src="image/Suraloka Zoo_ Lokasi, Harga Tiket, dan Info Terbaru Lainnya.jpeg" alt="Suraloka Zoo">
+      <h2>Suraloka Zoo</h2>
+      <p>Suraloka Zoo adalah kebun binatang mini berkonsep edukatif dan ramah anak yang terletak di kawasan wisata Kaliurang. Di sini, anak-anak dan keluarga dapat berinteraksi langsung dengan berbagai jenis hewan seperti kelinci, burung, iguana, kambing, domba, dan kuda poni.
+      <br><br>
+      Selain melihat hewan, pengunjung juga bisa mencoba flying fox, panahan, playground anak, dan naik kuda poni keliling taman. Kebersihan dan kenyamanan menjadi prioritas utama di Suraloka Zoo, menjadikannya tempat wisata yang aman untuk si kecil.
+      <br><br>
+      Suasana asri, sejuk, dan jauh dari hiruk pikuk kota menjadikan Suraloka Zoo tempat ideal untuk menghabiskan akhir pekan bersama keluarga. Tempat ini juga cocok sebagai sarana edukasi luar kelas bagi sekolah-sekolah.</p>
+      <span>📍 Kaliurang, Pakem, Sleman</span>
+    </article>
+
+  </div>
+  </section>
+
+  <section id="galeri">
+    <h1>Galeri Wisata</h1>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="image/2024 - Merapi Park Jogja _ Lokasi, Harga Tiket, Jam Buka, Daya Tarik & Fasilitas.jpeg" alt="Pantai Indah">
+    </div>
+    <div class="slide fade">
+      <img src="image/Stonehenge Merapi Jogja, Pesona Keindahan Taman Batu Unik Ala Eropa.jpeg" alt="Gunung Tinggi">
+    </div>
+    <div class="slide fade">
+      <img src="image/Suraloka Zoo_ Lokasi, Harga Tiket, dan Info Terbaru Lainnya.jpeg" alt="Air Terjun Segar">
+    </div>
+
+    <!-- Tombol navigasi -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  </section>
+
+  <section id="buku-tamu">
+    <h1>Buku Tamu</h1>
+  <div class="guestbook-container">
+    <form class="guestbook-form">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda..." required>
+
+      <label for="pesan">Pesan atau Kesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan atau kesan Anda di sini..." required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
